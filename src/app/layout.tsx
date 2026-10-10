@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OpenHands Workshop",
-  description: "Client-rendered Next.js scaffold",
+  title: "Nomo Apps Marketplace",
+  description: "A marketplace of small, focused web apps.",
 };
 
 export default function RootLayout({

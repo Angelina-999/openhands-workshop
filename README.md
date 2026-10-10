@@ -1,6 +1,6 @@
 # https://nomomarket.netlify.app/
 
-A marketplace for mini-apps; inspired by the Nomo WebOn marketplace.
+A marketplace for apps; inspired by the Nomo WebOn marketplace.
 
 The workflow in this repo uses Cloud Agents (with OpenHands), with self-correcting web-dev-agents based on screenshots.
 Deliverables are made with human-inspectable before-after-screenshots and with preview-URls.
@@ -25,7 +25,7 @@ Deliverables are made with human-inspectable before-after-screenshots and with p
 Issues can be submitted into OpenHands.
 OpenHands then works on the issue and creates a pull request containing:
 
-- before/after screenshots for UI changes,
-- the steps to verify the change.
+- a link to a working preview-URL (remember that localhost is not reachable from the outside),
+- before/after screenshots for UI changes.
 
 The agent rules for this repo are in [AGENTS.md](AGENTS.md).

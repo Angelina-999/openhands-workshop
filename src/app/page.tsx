@@ -1,34 +1,22 @@
-"use client";
-
-import { useState } from "react";
+import { getApps } from "@/data/apps";
+import { Marketplace } from "@/components/marketplace";
 
 export default function Home() {
-  const [count, setCount] = useState(0);
+  const apps = getApps();
 
   return (
-    <div className="flex flex-1 flex-col items-center justify-center bg-zinc-50 p-8 font-sans dark:bg-black">
-      <main className="w-full max-w-2xl rounded-2xl border border-black/[.08] bg-white p-10 dark:border-white/[.145] dark:bg-zinc-950">
-        <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-zinc-50">
-          OpenHands Workshop
-        </h1>
-        <p className="mt-3 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-          Client-rendered Next.js / React scaffold with TypeScript and Tailwind
-          CSS.
-        </p>
+    <div className="flex flex-1 flex-col bg-zinc-950 text-white">
+      <main className="flex flex-1 flex-col">
+        <section className="mx-auto w-full max-w-6xl px-4 pb-10 pt-14 sm:px-6 sm:pt-20">
+          <p className="text-sm uppercase tracking-[0.2em] text-zinc-500">Welcome to</p>
+          <h1 className="mt-2 text-4xl font-semibold tracking-tight sm:text-6xl">
+            Nomo Apps Marketplace
+          </h1>
+        </section>
 
-        <div className="mt-8 flex items-center gap-4">
-          <button
-            type="button"
-            onClick={() => setCount((value) => value + 1)}
-            className="rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
-          >
-            Count is {count}
-          </button>
-          <span className="text-sm text-zinc-500 dark:text-zinc-400">
-            Interactive client component
-          </span>
-        </div>
+        <Marketplace apps={apps} />
       </main>
     </div>
   );
 }
+
