@@ -54,6 +54,17 @@ export const APPS: App[] = [
     publishedAt: "2026-09-28",
     popularity: 70,
   },
+  {
+    id: "circuit-run",
+    name: "Circuit Run Extreme Speed",
+    domain: "circuitrun.netlify.app",
+    url: "https://circuitrun.netlify.app/",
+    slogan: "Drive a truck with airplane-speed!",
+    icon: "/apps/circuitrun-icon.svg",
+    card: "/apps/circuitrun-card.svg",
+    publishedAt: "2026-10-05",
+    popularity: 62,
+  },
 ];
 
 export function getApps(): App[] {
