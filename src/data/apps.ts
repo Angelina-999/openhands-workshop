@@ -10,10 +10,10 @@ export interface App {
   domain: string;
   url: string;
   slogan: string;
-  /** Emoji glyph used as the app icon. */
+  /** Path to the square app icon. */
   icon: string;
-  /** Tailwind gradient classes used for the card cover. */
-  cover: string;
+  /** Path to the wide cover image shown on top of the card. */
+  card: string;
   /** ISO date, used by the "Newest" sort. */
   publishedAt: string;
   /** Higher is more popular, used by the "Popularity" sort. */
@@ -22,37 +22,37 @@ export interface App {
 
 export const APPS: App[] = [
   {
-    id: "copper-cash",
-    name: "Copper Cash",
-    domain: "copper.cash",
-    url: "https://copper.cash",
-    slogan: "Hard assets, liquid transfers. Move value as easily as sending a text.",
-    icon: "🪙",
-    cover: "from-amber-500 via-orange-600 to-rose-600",
-    publishedAt: "2026-08-14",
-    popularity: 92,
+    id: "nomo-snake",
+    name: "Nomo Snake",
+    domain: "snake.nomo.zone",
+    url: "https://snake.nomo.zone/",
+    slogan: "Slither to Victory: Conquer the Grid!",
+    icon: "/apps/snake-icon.svg",
+    card: "/apps/snake-card.svg",
+    publishedAt: "2026-09-20",
+    popularity: 80,
   },
   {
-    id: "hub-live-typing",
-    name: "HUB Live Typing",
-    domain: "hubtyping.com",
-    url: "https://hubtyping.com",
-    slogan: "Seamlessly type from your phone into the HUB apps on your desktop.",
-    icon: "⌨️",
-    cover: "from-sky-500 via-blue-600 to-indigo-600",
-    publishedAt: "2026-09-02",
-    popularity: 74,
+    id: "uniswap",
+    name: "Uniswap",
+    domain: "app.uniswap.org",
+    url: "https://app.uniswap.org/",
+    slogan: "Decentralized Finance Protocol.",
+    icon: "/apps/uniswap-icon.svg",
+    card: "/apps/uniswap-card.svg",
+    publishedAt: "2026-08-05",
+    popularity: 95,
   },
   {
-    id: "vision-one",
-    name: "Vision ONE",
-    domain: "v1c.eu",
-    url: "https://v1c.eu",
-    slogan: "A cooperative for modern collaboration and shared growth.",
-    icon: "🔭",
-    cover: "from-emerald-500 via-teal-600 to-cyan-600",
-    publishedAt: "2026-07-21",
-    popularity: 61,
+    id: "minesweeper",
+    name: "Minesweeper",
+    domain: "minesweeper.online",
+    url: "https://minesweeper.online/",
+    slogan: "The classic logic game, free to play in your browser.",
+    icon: "/apps/minesweeper-icon.svg",
+    card: "/apps/minesweeper-card.svg",
+    publishedAt: "2026-09-28",
+    popularity: 70,
   },
 ];
 

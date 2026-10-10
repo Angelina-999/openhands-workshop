@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { App } from "@/data/apps";
 import { ArrowUpRightIcon } from "./icons";
 
@@ -8,16 +9,26 @@ interface AppCardProps {
 export function AppCard({ app }: AppCardProps) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/70 shadow-sm ring-1 ring-white/5 transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-2xl hover:shadow-black/40">
-      <div className={`flex h-40 items-center justify-center bg-gradient-to-br ${app.cover} sm:h-44`}>
-        <span className="text-6xl drop-shadow-lg" aria-hidden="true">
-          {app.icon}
-        </span>
+      <div className="relative h-40 overflow-hidden bg-zinc-800 sm:h-44">
+        <Image
+          src={app.card}
+          alt={`${app.name} cover`}
+          fill
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          className="object-cover transition duration-300 group-hover:scale-105"
+        />
       </div>
 
       <div className="flex flex-1 flex-col gap-4 p-5">
         <div className="flex items-center gap-3">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10 text-xl">
-            {app.icon}
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white/10">
+            <Image
+              src={app.icon}
+              alt=""
+              width={40}
+              height={40}
+              className="h-10 w-10 object-cover"
+            />
           </span>
           <div className="min-w-0">
             <h3 className="truncate font-semibold text-white">{app.name}</h3>
