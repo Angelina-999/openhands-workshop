@@ -2,6 +2,8 @@
 
 A marketplace for apps; inspired by the Nomo WebOn marketplace.
 
+See [WORKSHOP_PLAN.md](WORKSHOP_PLAN.md) for the workshop plan.
+
 The workflow in this repo uses Cloud Agents (with OpenHands), with self-correcting web-dev-agents based on screenshots.
 Deliverables are made with human-inspectable before-after-screenshots and with preview-URls.
 
