@@ -1,6 +1,7 @@
 import { getApps } from "@/data/apps";
 import { Marketplace } from "@/components/marketplace";
 import { PsychedelicBackground } from "@/components/psychedelic-bg";
+import { WalkingCat } from "@/components/walking-cat";
 
 export default function Home() {
   const apps = getApps();
@@ -18,6 +19,7 @@ export default function Home() {
 
         <Marketplace apps={apps} />
       </main>
+      <WalkingCat />
     </div>
   );
 }
