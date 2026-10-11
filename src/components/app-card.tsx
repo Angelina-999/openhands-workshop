@@ -8,7 +8,7 @@ interface AppCardProps {
 
 export function AppCard({ app }: AppCardProps) {
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/70 shadow-sm ring-1 ring-white/5 transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-2xl hover:shadow-black/40">
+    <article className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/60 shadow-sm ring-1 ring-white/5 backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-2xl hover:shadow-black/40">
       <div className="relative h-40 overflow-hidden bg-zinc-800 sm:h-44">
         <Image
           src={app.card}
